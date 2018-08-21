@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Star Wars RPG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylsheet" type="text/css" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Star Wars RPG!</h1>
+        </div>
+    </header>
+    <div class="charSelCont">
+        <span id="charSelDisp">
+            <div class="imgCont" id="skywalkerSel">
+                <p>Luke Skywalker</p>
+                <img src="#" alt="Luke Skywalker" class="player sel" />
+                <p id="skywalkerHealth"></p>
+            </div>
+            <div class="imgCont"  id="vaderSel">
+                <p>Darth Vader</p>
+                <img src="#" alt="Darth Vader" class="player sel" />
+                <p id="vaderHealth"></p>
+            </div>
+            <div class="imgCont" id="soloSel">
+                <p>Han Solo</p>
+                <img src="#" alt="Han Solo"  class="player sel" />
+                <p id="soloHealth"></p>
+            </div>
+            <div class="imgCont"  id="bobaSel">
+                <p>Boba Fette</p>
+                <img src="#" alt="Boba Fette" class="player sel" />
+                <p id="bobaHealth"></p>
+            </div>
+        </span>
+    </div>
+    <h2>Your Character</h2>
+    <div class="playCharCont">
+        <span id="playCharDisp">
+            <div class="imgCont" id="skywalkerPlayer">
+                <p>Luke Skywalker</p>
+                <img src="#" alt="Luke Skywalker"  class="player" />
+                <p id="skywalkerHealth"></p>
+            </div>
+            <div class="imgCont"  id="vaderPlayer">
+                <p>Darth Vader</p>
+                <img src="#" alt="Darth Vader" class="player" />
+                <p id="vaderHealth"></p>
+            </div>
+            <div class="imgCont" id="soloPlayer">
+                <p>Han Solo</p>
+                <img src="#" alt="Han Solo"  class="player" />
+                <p id="soloHealth"></p>
+            </div>
+            <div class="imgCont" id="bobaPlayer">
+                <p>Boba Fette</p>
+                <img src="#" alt="Boba Fette"  class="player" />
+                <p id="bobaHealth"></p>
+            </div>
+        </span>
+    </div>
+    <h2>Enemies Available to Attack</h2>
+    <div class="enCharCont">
+        <span id="enCharDisp">
+            <div class="imgCont" id="skywalkerEnemy">
+                <p>Luke Skywalker</p>
+                <img src="#" alt="Luke Skywalker"  class="enemy" />
+                <p id="skywalkerHealth"></p>
+            </div>
+            <div class="imgCont" id="vaderEnemy">
+                <p>Darth Vader</p>
+                <img src="#" alt="Darth Vader"  class="enemy" />
+                <p id="vaderHealth"></p>
+            </div>
+            <div class="imgCont" id="soloEnemy">
+                <p>Han Solo</p>
+                <img src="#" alt="Han Solo"  class="enemy" />
+                <p id="soloHealth"></p>
+            </div>
+            <div class="imgCont"  id="bobaEnemy">
+                <p>Boba Fette</p>
+                <img src="#" alt="Boba Fette" class="enemy" />
+                <p id="bobaHealth"></p>
+            </div>
+
+        </span>
+    </div>
+    <div class="fightSection">
+        <h2>Fight Section</h2>
+        <button id="atk-button">Attack!</button>
+        <h2>Defender</h2>
+        <span class="defDisp">
+            <div class="imgCont" id="skywalkerDef">
+                <p>Luke Skywalker</p>
+                <img src="#" alt="Luke Skywalker"  class="enemy" />
+                <p id="skywalkerHealth"></p>
+            </div>
+            <div class="imgCont" id="vaderDef" >
+                <p>Darth Vader</p>
+                <img src="#" alt="Darth Vader" class="enemy" />
+                <p id="vaderHealth"></p>
+            </div>
+            <div class="imgCont" id="soloDef">
+                <p>Han Solo</p>
+                <img src="#" alt="Han Solo"  class="enemy" />
+                <p id="soloHealth"></p>
+            </div>
+            <div class="imgCont" id="bobaDef">
+                <p>Boba Fette</p>
+                <img src="#" alt="Boba Fette" class="enemy" />
+                <p id="bobaHealth"></p>
+            </div>
+        </span>
+        <div class="combat">
+            <p id="playCharDmg"></p>
+            <p id="defDmg"></p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="javascript/game.js"></script>
+
+</body>
+
+</html>
