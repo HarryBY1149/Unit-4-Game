@@ -73,12 +73,10 @@ $(document).ready(function () {
     var newDefName;
 
     function reset() {
-        charArray.forEach(function () {
-            player = false;
-            enemy = false;
-            defender = false;
-        });
         for (i = 0; i < charArray.length; i++) {
+            charArray[i].player = false;
+            charArray[i].enemy = false;
+            charArray[i].defender = false;
             $(`#${charArray[i].Sel}Sel`).show();
             $(`#${charArray[i].Sel}Player`).hide();
             $(`#${charArray[i].Sel}Enemy`).hide();
