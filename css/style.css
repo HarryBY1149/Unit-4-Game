@@ -1,3 +1,7 @@
+body{
+    background-image: url(../images/x_wing_background.jpg);
+}
+
 .imgCont{
     display: inline-block;
     position: relative;
@@ -12,11 +16,22 @@ img{
     height: 120px;
     padding: 20px;
 }
- 
-.spacer{
-    display: block;
-    width: 100%;
 
+header {
+    background-image: linear-gradient(to right, white 50%, red, black);
+}
+
+header img{
+    float: left;
+    margin-left: -20px;
+}
+ 
+h1{
+        font-size: 48px;
+}
+
+h2{
+    color: goldenrod;
 }
 
 .sel {
@@ -39,15 +54,24 @@ img{
     border: 1px solid black;
     justify-content: center;
 }
-.name {
+
+p{
+    color:goldenrod;
+    font-size: 14px;
+}
+
+p.name {
     position: absolute;
     top: -4px;
     left: 2px;
     width: 100%;
+    font-size: 12px;
+    color: black;
 
 }
-p{
-    font-size: 10px;
+p.health{
+    font-size: 12px;
+    color: black;
 }
 .health {
     position: absolute;
