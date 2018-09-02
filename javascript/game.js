@@ -263,8 +263,9 @@ $(document).ready(function () {
             isDefender = isDef();
         };
         if (newPlayerHealth <= 0) {
-            alert("Game Over!");
             reset();
+            isDefender = isDef();
+            setTimeout(alert("Game Over!"),1000);
         };
 
 
